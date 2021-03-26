@@ -5,6 +5,7 @@ import ecommerceSite.Constants;
 import ecommerceSite.pageObject.AuthenticationPage;
 import ecommerceSite.pageObject.CreateAccountPage;
 import ecommerceSite.pageObject.LandingPage;
+import ecommerceSite.pageObject.MyAccountPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -42,7 +43,7 @@ public class LoginTest extends BaseTest {
         String fakeLastName = fake.name().lastName();
         //Set a random email
         String myEmail = "ansobete" + Math.random() + "@gmail.com";
-        registerAnUser(myEmail, fakeFirstName, fakeLastName);
+        MyAccountPage myAccountPage = registerAnUser(myEmail, fakeFirstName, fakeLastName);
 
         Thread.sleep(5000);
         //Logout
@@ -78,7 +79,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(createErrorMsg.getText(), "An account using this email address has already been registered. Please enter a valid password or request a new one.");
     }
 
-    public void registerAnUser (String myEmail,String fakeFirstName, String fakeLastName) throws InterruptedException {
+    private MyAccountPage registerAnUser (String myEmail, String fakeFirstName, String fakeLastName) throws InterruptedException {
 
         LandingPage landingPage = new LandingPage(driver);
         //como es un flujo, la pagina de Authentication se presenta despues de la landingPage
@@ -86,39 +87,11 @@ public class LoginTest extends BaseTest {
         authenticationPage.validateAuthPage();
         CreateAccountPage createAccountPage = authenticationPage.createAccountEmail(myEmail);
 
-        
+        Thread.sleep(5000);
         //email validation
-        WebElement emailValidation = driver.findElement(By.id("email"));
-        String registerEmail = emailValidation.getAttribute("value");
-        Assert.assertEquals(myEmail, registerEmail, "emails does not match");
+        String registerEmail = createAccountPage.confirmRegisterEmail();
+        Assert.assertEquals(registerEmail, myEmail, "emails does not match");
 
-        femaleRadioButton.click();
-        firstName.sendKeys(fakeFirstName);
-        lastName.sendKeys(fakeLastName);
-        password.sendKeys(Constants.PASSWORD);
-        Select selectDays = new Select(daySelector);
-        selectDays.selectByValue(Constants.BIRTH_DAY);
-        Select selectMonths = new Select(monthSelector);
-        selectMonths.selectByValue(Constants.BIRTH_MONTH);
-        Select selectYears = new Select(yearSelector);
-        selectYears.selectByValue(Constants.BIRTH_YEAR);
-        company.sendKeys(Constants.COMPANY);
-        address1.sendKeys(Constants.ADDRESS1);
-        address2.sendKeys(Constants.ADDRESS2);
-        city.sendKeys(Constants.CITY);
-        Select selectState = new Select(stateSelector);
-        selectState.selectByValue("32");
-        postcode.sendKeys(Constants.POSTAL_CODE);
-        Select selectCountry = new Select(countrySelector);
-        selectCountry.selectByValue("21");
-        additionalInfo.sendKeys(Constants.ADDITIONAL_INFO);
-        phone.sendKeys(Constants.PHONE_NUMBER);
-        mobile.sendKeys(Constants.MOBILE_NUMBER);
-        addressAlias.clear();
-        addressAlias.sendKeys(Constants.NICKNAME);
-
-        //clicking on register button
-        registerButton.click();
-
+        return createAccountPage.fillingRegisterForm(fakeFirstName, fakeLastName);
     }
 }

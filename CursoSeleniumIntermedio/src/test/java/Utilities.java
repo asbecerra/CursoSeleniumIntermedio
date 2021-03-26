@@ -32,7 +32,7 @@ public class Utilities extends BaseTest {
         String registerEmail = emailValidation.getAttribute("value");
 
         Assert.assertEquals(myEmail, registerEmail, "emails does not match");
-
+/*
         femaleRadioButton.click();
         firstName.sendKeys(fakeFirstName);
         lastName.sendKeys(fakeLastName);
@@ -60,6 +60,6 @@ public class Utilities extends BaseTest {
 
         //clicking on register button
         registerButton.click();
-
+*/
     }
 }

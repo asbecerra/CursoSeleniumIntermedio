@@ -21,7 +21,7 @@ public class AuthenticationPage {
         driver.findElement(By.id("email_create")).sendKeys(myEmail);
         driver.findElement(By.id("SubmitCreate")).click();
 
-        CreateAccountPage createAccountPage = CreateAccountPage(driver);
+        CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         return createAccountPage;
     }
 }
