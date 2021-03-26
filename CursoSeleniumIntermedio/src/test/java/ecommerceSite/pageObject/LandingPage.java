@@ -11,8 +11,11 @@ public class LandingPage {
         this.driver = remoteDriver;
     }
 
-    public void clickOnSingInBtn(){
+    public AuthenticationPage clickOnSingInBtn(){
         WebElement singInBtn = driver.findElement(By.xpath("//*[@href='http://automationpractice.com/index.php?controller=my-account']"));
         singInBtn.click();
+
+        AuthenticationPage authenticationPage = new AuthenticationPage(driver);
+        return authenticationPage;
     }
 }

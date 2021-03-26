@@ -2,7 +2,8 @@ package ecommerceSite.Test;
 
 import com.github.javafaker.Faker;
 import ecommerceSite.Constants;
-import ecommerceSite.Test.BaseTest;
+import ecommerceSite.pageObject.AuthenticationPage;
+import ecommerceSite.pageObject.CreateAccountPage;
 import ecommerceSite.pageObject.LandingPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -80,16 +81,12 @@ public class LoginTest extends BaseTest {
     public void registerAnUser (String myEmail,String fakeFirstName, String fakeLastName) throws InterruptedException {
 
         LandingPage landingPage = new LandingPage(driver);
-        landingPage.clickOnSingInBtn();
-        WebElement authenticationSection = driver.findElement(By.tagName("h1"));
+        //como es un flujo, la pagina de Authentication se presenta despues de la landingPage
+        AuthenticationPage authenticationPage = landingPage.clickOnSingInBtn();
+        authenticationPage.validateAuthPage();
+        CreateAccountPage createAccountPage = authenticationPage.createAccountEmail(myEmail);
 
-        Assert.assertEquals("AUTHENTICATION", authenticationSection.getText());
-        Assert.assertTrue(driver.getTitle().contains("Login"));
-
-        driver.findElement(By.id("email_create")).sendKeys(myEmail);
-        driver.findElement(By.id("SubmitCreate")).click();
-
-        Thread.sleep(3000);
+        
         //email validation
         WebElement emailValidation = driver.findElement(By.id("email"));
         String registerEmail = emailValidation.getAttribute("value");
