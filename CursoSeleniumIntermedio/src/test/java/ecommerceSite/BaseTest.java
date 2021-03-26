@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -47,7 +46,7 @@ public class BaseTest {
     @FindBy(xpath = "//*[@id='create_account_error']/ol/li")
     public WebElement createErrorMsg;
 
-    @FindBy(id ="id_gender2")
+    @FindBy(id = "id_gender2")
     public WebElement femaleRadioButton;
 
     @FindBy(id = "customer_firstname")

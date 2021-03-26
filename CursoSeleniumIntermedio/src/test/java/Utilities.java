@@ -1,9 +1,8 @@
-package ecommerceSite;
-
+import ecommerceSite.BaseTest;
+import ecommerceSite.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -34,26 +33,6 @@ public class Utilities extends BaseTest {
         String registerEmail = emailValidation.getAttribute("value");
 
         Assert.assertEquals(myEmail, registerEmail, "emails does not match");
-
-        //WebElement femaleRadioButton = driver.findElement(By.id("id_gender2"));
-        //WebElement firstName = driver.findElement(By.id("customer_firstname"));
-        //WebElement lastName = driver.findElement(By.id("customer_lastname"));
-        //WebElement password = driver.findElement(By.id("passwd"));
-        //WebElement daySelector = driver.findElement(By.id("days"));
-        //WebElement monthSelector = driver.findElement(By.id("months"));
-        //WebElement yearSelector = driver.findElement(By.id("years"));
-        //WebElement company = driver.findElement(By.id("company"));
-        //WebElement address1 = driver.findElement(By.id("address1"));
-        //WebElement address2 = driver.findElement(By.id("address2"));
-        //WebElement city = driver.findElement(By.id("city"));
-        //WebElement stateSelector = driver.findElement(By.id("id_state"));
-        //WebElement postcode = driver.findElement(By.id("postcode"));
-        //WebElement countrySelector = driver.findElement(By.id("id_country"));
-        //WebElement additionalInfo = driver.findElement(By.id("other"));
-        //WebElement phone = driver.findElement(By.id("phone"));
-        //WebElement mobile = driver.findElement(By.id("phone_mobile"));
-        //WebElement addressAlias = driver.findElement(By.id("alias"));
-        //WebElement registerButton = driver.findElement(By.id("submitAccount"));
 
         femaleRadioButton.click();
         firstName.sendKeys(fakeFirstName);

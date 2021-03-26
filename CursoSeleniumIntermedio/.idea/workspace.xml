@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b25ce3d3-02c2-4592-99bf-8f7e7c970779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Practice4/FindByExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Practice4/FindByExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Practice1.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
-    <configuration name="AirbnbTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CursoSeleniumIntermedio" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practice2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Practice2" />
-      <option name="MAIN_CLASS_NAME" value="Practice2.AirbnbTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="AirbnbTest.airbnbSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CursoSeleniumIntermedio" />
       <useClassPathOnly />
@@ -103,7 +75,7 @@
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ecommerceSite.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +97,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.checkUserMailIsUnique" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CursoSeleniumIntermedio" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ecommerceSite" />
+      <option name="MAIN_CLASS_NAME" value="ecommerceSite.LoginTest" />
+      <option name="METHOD_NAME" value="checkUserMailIsUnique" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CursoSeleniumIntermedio" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ecommerceSite.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,7 +158,7 @@
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ecommerceSite.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,18 +202,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.LoginTest" />
-      <item itemvalue="TestNG.AirbnbTest" />
       <item itemvalue="TestNG.AirbnbTest.airbnbSearch" />
       <item itemvalue="TestNG.LoginTest.registrationTest" />
       <item itemvalue="TestNG.LoginTest.loginTest" />
+      <item itemvalue="TestNG.LoginTest.checkUserMailIsUnique" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.checkUserMailIsUnique" />
         <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.LoginTest.registrationTest" />
         <item itemvalue="TestNG.AirbnbTest.airbnbSearch" />
-        <item itemvalue="TestNG.AirbnbTest" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,53 +247,61 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="672" y="166" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615657823287" />
-    <state width="1868" height="291" key="GridCell.Tab.0.bottom" timestamp="1616257066464">
+    <state x="723" y="396" width="473" height="322" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1616724000362">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="723" y="396" width="473" height="322" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616724000362" />
+    <state width="1868" height="211" key="GridCell.Tab.0.bottom" timestamp="1616264143609">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083127" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028973" />
-    <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616257066464" />
-    <state width="1868" height="291" key="GridCell.Tab.0.center" timestamp="1616257066463">
+    <state width="1868" height="211" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143609" />
+    <state width="1868" height="211" key="GridCell.Tab.0.center" timestamp="1616264143608">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083125" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028971" />
-    <state width="1868" height="291" key="GridCell.Tab.0.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616257066463" />
-    <state width="1868" height="291" key="GridCell.Tab.0.left" timestamp="1616257066462">
+    <state width="1868" height="211" key="GridCell.Tab.0.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143608" />
+    <state width="1868" height="211" key="GridCell.Tab.0.left" timestamp="1616264143608">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083124" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028970" />
-    <state width="1868" height="291" key="GridCell.Tab.0.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616257066462" />
-    <state width="1868" height="291" key="GridCell.Tab.0.right" timestamp="1616257066464">
+    <state width="1868" height="211" key="GridCell.Tab.0.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143608" />
+    <state width="1868" height="211" key="GridCell.Tab.0.right" timestamp="1616264143609">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083126" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028972" />
-    <state width="1868" height="291" key="GridCell.Tab.0.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616257066464" />
-    <state width="1868" height="361" key="GridCell.Tab.1.bottom" timestamp="1615660862242">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1868" height="211" key="GridCell.Tab.0.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143609" />
+    <state width="1868" height="343" key="GridCell.Tab.1.bottom" timestamp="1616261398993">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615660862242" />
-    <state width="1868" height="361" key="GridCell.Tab.1.center" timestamp="1615660862240">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1868" height="343" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616261398993" />
+    <state width="1868" height="343" key="GridCell.Tab.1.center" timestamp="1616261398992">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="361" key="GridCell.Tab.1.center/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615660862240" />
-    <state width="1868" height="361" key="GridCell.Tab.1.left" timestamp="1615660862239">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1868" height="343" key="GridCell.Tab.1.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616261398992" />
+    <state width="1868" height="343" key="GridCell.Tab.1.left" timestamp="1616261398991">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="361" key="GridCell.Tab.1.left/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615660862239" />
-    <state width="1868" height="361" key="GridCell.Tab.1.right" timestamp="1615660862241">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1868" height="343" key="GridCell.Tab.1.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616261398991" />
+    <state width="1868" height="343" key="GridCell.Tab.1.right" timestamp="1616261398993">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="361" key="GridCell.Tab.1.right/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615660862241" />
+    <state width="1868" height="343" key="GridCell.Tab.1.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616261398993" />
     <state x="385" y="122" key="Maven.ArtifactSearchDialog" timestamp="1615657900508">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="385" y="122" key="Maven.ArtifactSearchDialog/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615657900508" />
-    <state x="276" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1616253845366">
+    <state x="276" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1616721387723">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="276" y="205" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616253845366" />
+    <state x="276" y="205" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616721387723" />
   </component>
 </project>
