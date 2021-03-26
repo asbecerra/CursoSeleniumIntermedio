@@ -3,6 +3,7 @@ package ecommerceSite.Test;
 import com.github.javafaker.Faker;
 import ecommerceSite.Constants;
 import ecommerceSite.Test.BaseTest;
+import ecommerceSite.pageObject.LandingPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -78,10 +79,11 @@ public class LoginTest extends BaseTest {
 
     public void registerAnUser (String myEmail,String fakeFirstName, String fakeLastName) throws InterruptedException {
 
-        driver.findElement(By.xpath("//*[@href='http://automationpractice.com/index.php?controller=my-account']")).click();
-        WebElement autenticationSection = driver.findElement(By.tagName("h1"));
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.clickOnSingInBtn();
+        WebElement authenticationSection = driver.findElement(By.tagName("h1"));
 
-        Assert.assertEquals("AUTHENTICATION", autenticationSection.getText());
+        Assert.assertEquals("AUTHENTICATION", authenticationSection.getText());
         Assert.assertTrue(driver.getTitle().contains("Login"));
 
         driver.findElement(By.id("email_create")).sendKeys(myEmail);
