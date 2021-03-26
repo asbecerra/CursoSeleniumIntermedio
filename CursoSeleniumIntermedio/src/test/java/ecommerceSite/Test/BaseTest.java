@@ -1,4 +1,4 @@
-package ecommerceSite;
+package ecommerceSite.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -117,6 +117,6 @@ public class BaseTest {
     public void tearDown() throws InterruptedException {
         System.out.println("A test run has finished...");
         Thread.sleep(15000);
-        driver.close();
+        //driver.close();
     }
 }

@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b25ce3d3-02c2-4592-99bf-8f7e7c970779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/Test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ecommerceSite/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ecommerceSite/Test/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
     <configuration name="AirbnbTest.airbnbSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CursoSeleniumIntermedio" />
       <useClassPathOnly />
@@ -81,7 +86,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ecommerceSite" />
-      <option name="MAIN_CLASS_NAME" value="ecommerceSite.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ecommerceSite.Test.LoginTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea -Dtestng.dtd.http=true" />
@@ -108,7 +113,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ecommerceSite" />
-      <option name="MAIN_CLASS_NAME" value="ecommerceSite.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ecommerceSite.Test.LoginTest" />
       <option name="METHOD_NAME" value="checkUserMailIsUnique" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -136,7 +141,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ecommerceSite" />
-      <option name="MAIN_CLASS_NAME" value="ecommerceSite.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ecommerceSite.Test.LoginTest" />
       <option name="METHOD_NAME" value="loginTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -164,7 +169,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ecommerceSite" />
-      <option name="MAIN_CLASS_NAME" value="ecommerceSite.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ecommerceSite.Test.LoginTest" />
       <option name="METHOD_NAME" value="registrationTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -209,9 +214,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.checkUserMailIsUnique" />
-        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.LoginTest.registrationTest" />
         <item itemvalue="TestNG.AirbnbTest.airbnbSearch" />
       </list>
@@ -251,30 +256,30 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="723" y="396" width="473" height="322" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616724000362" />
-    <state width="1868" height="211" key="GridCell.Tab.0.bottom" timestamp="1616264143609">
+    <state width="1868" height="211" key="GridCell.Tab.0.bottom" timestamp="1616725303986">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083127" />
     <state width="1868" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028973" />
-    <state width="1868" height="211" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143609" />
-    <state width="1868" height="211" key="GridCell.Tab.0.center" timestamp="1616264143608">
+    <state width="1868" height="211" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616725303986" />
+    <state width="1868" height="211" key="GridCell.Tab.0.center" timestamp="1616725303984">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083125" />
     <state width="1868" height="291" key="GridCell.Tab.0.center/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028971" />
-    <state width="1868" height="211" key="GridCell.Tab.0.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143608" />
-    <state width="1868" height="211" key="GridCell.Tab.0.left" timestamp="1616264143608">
+    <state width="1868" height="211" key="GridCell.Tab.0.center/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616725303984" />
+    <state width="1868" height="211" key="GridCell.Tab.0.left" timestamp="1616725303983">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083124" />
     <state width="1868" height="291" key="GridCell.Tab.0.left/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028970" />
-    <state width="1868" height="211" key="GridCell.Tab.0.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143608" />
-    <state width="1868" height="211" key="GridCell.Tab.0.right" timestamp="1616264143609">
+    <state width="1868" height="211" key="GridCell.Tab.0.left/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616725303983" />
+    <state width="1868" height="211" key="GridCell.Tab.0.right" timestamp="1616725303984">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.0.1920.1080/1920.344.1280.800@0.0.1920.1080" timestamp="1615661083126" />
     <state width="1868" height="291" key="GridCell.Tab.0.right/0.0.1920.1080/1920.367.1280.777@0.0.1920.1080" timestamp="1615661028972" />
-    <state width="1868" height="211" key="GridCell.Tab.0.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616264143609" />
+    <state width="1868" height="211" key="GridCell.Tab.0.right/0.23.1920.1057/1920.367.1280.777@0.23.1920.1057" timestamp="1616725303984" />
     <state width="1868" height="343" key="GridCell.Tab.1.bottom" timestamp="1616261398993">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

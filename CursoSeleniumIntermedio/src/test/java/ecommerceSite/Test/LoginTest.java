@@ -1,13 +1,15 @@
-package ecommerceSite;
+package ecommerceSite.Test;
 
 import com.github.javafaker.Faker;
+import ecommerceSite.Constants;
+import ecommerceSite.Test.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest{
+public class LoginTest extends BaseTest {
 
     @Test
     public void registrationTest () throws InterruptedException {
@@ -39,12 +41,15 @@ public class LoginTest extends BaseTest{
         //Set a random email
         String myEmail = "ansobete" + Math.random() + "@gmail.com";
         registerAnUser(myEmail, fakeFirstName, fakeLastName);
+
+        Thread.sleep(5000);
         //Logout
         logoutBtn.click();
 
         //Login
         emailLoginTextField.sendKeys(myEmail);
         pwdLoginTextField.sendKeys("Helloworld");
+        Thread.sleep(5000);
         signInBtn.click();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("my-account"));
@@ -61,7 +66,7 @@ public class LoginTest extends BaseTest{
         String fakeLastName = fake.name().lastName();
         //Set a random email
         String myEmail = "ansobete" + Math.random() + "@gmail.com";
-        
+
         registerAnUser(myEmail, fakeFirstName, fakeLastName);
         //Logout
         logoutBtn.click();
